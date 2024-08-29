@@ -1,0 +1,26 @@
+{
+  "name": "namsate-react",
+  "version": "1.0.0",
+  "description": "\"React js project\"",
+  
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "javascript"
+  ],
+  "author": "mangilalbhairi",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
