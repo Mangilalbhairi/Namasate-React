@@ -48,11 +48,10 @@ const Body = () => {
         ?.restaurants
     );
   };
-
   // <--- Return Body Component --->
 
   return filterReastrantList.length === 0 ? (
-    <Shimer />
+    <Shimer/>
   ) : (
     <>
       <div className="Body">

@@ -5,7 +5,4 @@ export const URL_IMAGE =
 export const FETCH_URL = "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.95250&lng=75.71050&restaurantId=";
 
 
-
-
-
   

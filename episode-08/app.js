@@ -14,7 +14,7 @@ const AppLayout = () => {
         <Header />
         <Outlet />
         <Routes>
-          <Route path="/" element={<Body />}></Route>
+          <Route path="/" element={<Body />}> </Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/team" element={<Team />}></Route>

@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .wrapper {
+    width: 1200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .nav-iteam {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .nav-iteam ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 8px 0px;
+  }
+  .link-style{
+    text-decoration: none;
+  }
+  .reastrant-card-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card-container {
+    width: 250px;
+    transition: all 0.5s linear 1s;
+  }
+  .card-container:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: drop-shadow(8px 5px 6px rgb(170, 167, 167));
+  }
+  .card-description {
+    width: 100%;
+    height: auto;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .card-heading {
+    width: 100%;
+    white-space:nowrap;
+    font-size: 12px;
+    font-weight: 500;
+  
+  }
+  .rating {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .distance {
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .cuision {
+    color: rgb(206, 199, 199);
+    width:100%;
+  }
+  .cuision h4{
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .location {
+    font-size: 14px;
+    color: rgb(151, 148, 148);
+  }
+  .dot {
+    font-size: 25px;
+    font-weight: bold;
+  }
+.card{
+  background-color: lightgray;
+  border: 1px solid gray;
+  height: 200px;
+  border-radius: 10px;
+} 
+
+.search-container{
+  display: flex;
+  gap: 10px;
+}
+.filter-container{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+.search-box{
+  border-radius: 8px;
+  padding: 0px 10px;
+
+}
+.btn{
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(240, 231, 231);
+  cursor: pointer;
+  transition: all 0.8s linear 1s;
+}
+.btn:hover{
+  background-color: palevioletred;
+  border: 1px solid black;
+
+}
+.login-btn{
+  padding: 0px 10px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(238, 228, 228);
+  color: black;
+  cursor: pointer;
+}
+
+/* // <--- Design RestaurantMenu section ---> */
+
+.menu-wrapper{
+  width: 1200px;
+}
+.menu-card{
+  
+  width: 60%;
+  /* padding: 30px; */
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  gap: 5px;
+  padding: 20px 0px;
+}
+.menu-detail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  box-shadow: 10px 14px 20px rgb(236, 230, 230), -10px -14px 20px rgb(236, 230, 230);
+}
+.pd{
+  padding-left: 20px;
+}
+.ratings{
+  height: auto;
+  display: flex;
+  gap:3px;
+  font-weight: 700;
+}
+.dott{
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: 900;
+  align-self: center;
+  position: relative; 
+  bottom: 5px;
+}
+
+.menu-link a{
+  padding: 0px 3px;
+  color: rgb(255, 107, 9);
+  font-weight: 600;
+}
+.outlet-menu{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.dot-style{
+  /* padding: 29px 0px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.dots{
+  width: 8px;
+  height: 8px;
+  border-radius: 90%;
+  background-color: rgb(185, 178, 178);
+  border: 2px solid rgb(185, 178, 178) ;
+}
+.arrow-line{
+  height: 20px;
+  margin-left: 3px;
+  color: rgb(185, 178, 178);
+  border-left: 1px solid rgb(185, 178, 178);
+}
+.outlet-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* gap: 7px; */
+  /* border: 1px solid black; */
+}
+.outlet-head{
+  display: flex;
+  gap: 10px;
+}
+.outlet-head b{
+  font-weight: 600;
+}
+.outlet-distance{
+  font-weight: 600;
+}
+hr{
+ border: 1px solid rgb(241, 241, 239);
+}
+

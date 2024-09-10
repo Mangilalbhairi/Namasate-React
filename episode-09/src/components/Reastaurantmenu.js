@@ -7,8 +7,8 @@ import useRestaurantMenu from "../utils/useRestaurantMenu.js";
 
 const RestaurantMenu = () => {
   const { id } = useParams();
-  const resMenu = useRestaurantMenu(id);
-  if (resMenu.length === 0) return <Shimer />;
+  const restInfo = useRestaurantMenu(id);
+  if (restInfo.length === 0 ) return <Shimer />;
   const {
     name,
     areaName,
@@ -18,7 +18,7 @@ const RestaurantMenu = () => {
     totalRatingsString,
     feeDetails,
     sla,
-  } = resMenu.data.cards[2].card.card.info;
+  } = restInfo.data.cards[2].card.card.info;
 
   //<--- Return resturant menu data --->
   return (
@@ -60,12 +60,13 @@ const RestaurantMenu = () => {
             </div>
           </div>
           <hr />
-          <div>
+          <div >
             <h5>{feeDetails.message}</h5>
           </div>
         </div>
       </div>
     </div>
+    
   );
 };
 

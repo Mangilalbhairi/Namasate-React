@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Suspense} from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header.js";
 import Body from "./src/components/Body.js";
@@ -7,7 +7,8 @@ import About from "./src/components/About.js";
 import Error from "./src/components/Error.js";
 import Contact from "./src/components/Contact.js";
 import RestaurantMenu from "./src/components/Reastaurantmenu.js";
-import Grocery from "./src/components/Grocery.js";
+
+const Grocery = React.lazy(() => import("./src/components/Grocery.js"))
 
 
 
@@ -47,7 +48,7 @@ const Applayout = () => {
         },
         {
           path:"/grocery",
-          element:<Grocery/>
+          element:<Suspense fallback={<h1>Grocery Product Come Soon!!</h1>}><Grocery/></Suspense>,
         }
 
       ],
