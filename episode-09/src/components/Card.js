@@ -5,13 +5,8 @@ import { Link } from "react-router-dom";
 
 const Card = (props) => {
   const { resData } = props; //Destructring of object
-  const { cloudinaryImageId,
-          id,
-          name,
-          avgRating,
-          sla,
-          cuisines,
-          areaName } = resData.info;
+  const { cloudinaryImageId, id, name, avgRating, sla, cuisines, areaName } =
+    resData.info;
   return (
     <>
       <div className="card-container">
@@ -35,7 +30,6 @@ const Card = (props) => {
             <h4>{cuisines.join(",").trim()}</h4>
           </div>
           <h4 className="location">{areaName}</h4>
-          
         </div>
       </div>
     </>
